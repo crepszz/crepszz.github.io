@@ -43,6 +43,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width:600px){
+  .container{    
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+}
 
 .botao {
   display: inline-block;
@@ -220,10 +226,6 @@ img {
     top: -7px;
 
   }
-  /* .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
-  } */
 }
 
 .introducao {
@@ -296,6 +298,9 @@ img {
 @media (max-width: 800px) {
   .introducao-conteudo{
     padding-top: 0px;
+  }
+  .introducao{
+    grid-template-columns: 1fr 1fr;
   }
   .conteudo-imagem {
     display: none;
