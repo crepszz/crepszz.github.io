@@ -43,11 +43,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width:600px){
-  .container{    
+@media (max-width: 600px) {
+  .container {
     padding-left: 10px;
-    padding-right: 10px;  
-}
+    padding-right: 10px;
+  }
 }
 
 .botao {
@@ -160,27 +160,26 @@ img {
   }
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 600px) {
   #menu {
     display: block;
     position: absolute;
     width: 100%;
     top: 70px;
-    right: 0px;    
+    right: 0px;
     background: var(--cor-0);
-    transition: .6s;
+    transition: 0.6s;
     z-index: 9999;
-    height: 0;    
+    height: 0;
     visibility: hidden;
-    overflow-y: hidden;    
-    
+    overflow-y: hidden;
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
     visibility: visible;
-    overflow-y: auto;    
+    overflow-y: auto;
   }
-  #menu a{
+  #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid #ffffff;
@@ -188,43 +187,42 @@ img {
   .logo-email a {
     display: none;
   }
-  #btn-mobile {    
+  #btn-mobile {
     display: flex;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 0.9rem;
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    gap: .5rem;
+    gap: 0.5rem;
   }
   #hamburguer {
     display: block;
     width: 20px;
     border-top: 2px solid;
-    }
+  }
 
-  #hamburguer::after, #hamburguer::before{
-    content: '';
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
     display: block;
     width: 20px;
     height: 2px;
     background-color: currentColor;
     margin-top: 5px;
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
   }
   #nav.active #hamburguer {
     border-top-color: transparent;
   }
 
-  #nav.active #hamburguer::before{
+  #nav.active #hamburguer::before {
     transform: rotate(135deg);
-
   }
-  #nav.active #hamburguer::after{
+  #nav.active #hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
-
   }
 }
 
@@ -263,7 +261,6 @@ img {
 .botao a {
   color: var(--cor-1);
   display: block;
-  
 }
 
 .introducao-download {
@@ -282,29 +279,24 @@ img {
     
 } */
 
-.introducao-botaoSocial{
+.introducao-botaoSocial {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
-.botao-social{
+.botao-social {
   display: flex;
   align-items: center;
   gap: 1rem;
-  
 }
 
-.botao-social img{
+.botao-social img {
   width: 20px;
   height: 20px;
-  box-sizing: border-box;
-  
-
-
 }
-.botao-social a{
-  padding: 10px 10px;   
+.botao-social a {
+  padding: 10px 10px;
 }
 
 .introducao-download::after {
@@ -329,10 +321,10 @@ img {
 }
 
 @media (max-width: 800px) {
-  .introducao-conteudo{
+  .introducao-conteudo {
     padding-top: 0px;
   }
-  .introducao{
+  .introducao {
     grid-template-columns: 1fr 1fr;
   }
   .conteudo-imagem {
