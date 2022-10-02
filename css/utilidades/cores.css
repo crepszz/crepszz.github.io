@@ -1,0 +1,35 @@
+:root {
+    --cor-0: #020101;
+    --cor-1: #FFFFFF;
+    --cor-2: #A6A6A6;
+    --cor-3: #CFC5C1;
+    --cor-4: #A15443;
+    --cor-5: #DF5646;    
+    --cor-6: #5C2A20;    
+    --cor-7: #EB4A4A;
+}
+
+.cor-0 {
+    color: var(--cor-0);
+  }
+  .cor-1 {
+    color: var(--cor-1);
+  }
+  .cor-2 {
+    color: var(--cor-2);
+  }
+  .cor-3 {
+    color: var(--cor-3);
+  }
+  .cor-4 {
+    color: var(--cor-4);
+  }
+  .cor-5 {
+    color: var(--cor-5);
+  }
+  .cor-6 {
+    color: var(--cor-6);
+  }
+  .cor-7 {
+    color:var(--cor-7);
+  }
