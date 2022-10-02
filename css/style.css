@@ -117,6 +117,10 @@ img {
   position: relative;
 }
 
+#btn-mobile {
+  display: none;
+}
+
 .header-menu a:after {
   content: "";
   display: block;
@@ -128,7 +132,8 @@ img {
   position: absolute;
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover:after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 
@@ -149,17 +154,76 @@ img {
   }
 }
 
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
+@media (max-width: 600px) { 
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;    
+    background: var(--cor-0);
+    transition: .6s;
+    z-index: 9999;
+    height: 0;    
+    visibility: hidden;
+    overflow-y: hidden;    
+    
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;    
+  }
+  #menu a{
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid #ffffff;
   }
   .logo-email a {
     display: none;
   }
-  .header-menu a {
+  #btn-mobile {    
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    gap: .5rem;
+  }
+  #hamburguer {
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+    }
+
+  #hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before{
+    transform: rotate(135deg);
+
+  }
+  #nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+
+  }
+  /* .header-menu a {
     padding: 8px 12px;
     font-size: 14px;
-  }
+  } */
 }
 
 .introducao {
@@ -204,9 +268,8 @@ img {
   position: relative;
   display: inline-block;
 }
-.introducao-download a {  
+.introducao-download a {
   color: var(--cor-5);
-  
 }
 
 .introducao-download::after {
@@ -218,24 +281,26 @@ img {
   position: absolute;
   margin-top: 1px;
   margin-left: 1px;
-  
 }
 
-.introducao-download::before{
-    content: "";
-    display: inline-block;
-    height: 2px;
-    width: 117%;
-    background: var(--cor-5);
-    margin-top: 20px ;    
-    position: absolute;
-    
-  }  
+.introducao-download::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 117%;
+  background: var(--cor-5);
+  margin-top: 20px;
+  position: absolute;
+}
 
 @media (max-width: 800px) {
+  .introducao-conteudo{
+    padding-top: 0px;
+  }
   .conteudo-imagem {
     display: none;
   }
-  .introducao-conteudo {
+  .introducao {
+    gap: 50px;
   }
 }
