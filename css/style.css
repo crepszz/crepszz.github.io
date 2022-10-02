@@ -263,6 +263,7 @@ img {
 .botao a {
   color: var(--cor-1);
   display: block;
+  
 }
 
 .introducao-download {
@@ -272,6 +273,42 @@ img {
 }
 .introducao-download a {
   color: var(--cor-5);
+}
+/* .introducao-socialmedias{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  
+    
+} */
+
+.introducao-botaoSocial{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;  
+}
+
+.botao-social{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.botao-social img{
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  
+
+
+}
+.botao-2{
+  
+  
+}
+.botao-social a{
+  padding: 10px 10px;   
 }
 
 .introducao-download::after {
