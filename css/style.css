@@ -7,6 +7,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #111111;
   position: relative;
+  margin-top: 9rem;
 }
 
 h1,
@@ -100,9 +101,10 @@ img {
 .header-bg {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;  
   background-color: #111111;
   z-index: 9999;
+  
 }
 .header {
   display: flex;
@@ -111,8 +113,9 @@ img {
   gap: 20px;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 20px;  
 }
+
 
 .logo-email {
   display: flex;
@@ -123,6 +126,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  
 }
 
 .header-menu a {
@@ -237,10 +241,10 @@ img {
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   gap: 60px;
-  margin-top: 12rem;
+  /* margin-top: 12rem; */
   margin-bottom: 200px;
 }
 .introducao-conteudo {
@@ -251,7 +255,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 60%;
+  object-position: 60%; 
 }
 .introducao-conteudo h1,
 .introducao-conteudo h2 {
@@ -335,6 +339,9 @@ img {
   .introducao {
     gap: 50px;
   }
+  .introducao-conteudo{
+    margin-bottom: 5rem;
+  }
 }
 .section-h2 {
   margin-bottom: 4rem;
@@ -374,12 +381,24 @@ img {
   .introducao {
     margin-bottom: 20px;
   }
-
-  @media (max-width: 600px) {
-    .section-portfolio > div {
-      width: 200px;
-    }
+}
+@media (max-width: 600px) {
+  .section-portfolio > div {
+    width: 200px;
+  } 
+}
+@media (max-width: 500px) {
+  .section-portfolio  {
+    grid-template-columns: 1fr;    
+    justify-items: center;
+    width: 100vw;
   }
+  .section-portfolio > div{
+    width: 300px;
+  }
+  .section-portfolio img{
+    width: 300px;
+}
 }
 
 .experiencia {
