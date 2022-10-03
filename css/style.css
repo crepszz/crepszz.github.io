@@ -104,6 +104,7 @@ img {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 4rem;
 }
 
 .logo-email {
@@ -232,6 +233,7 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 60px;
+  margin-bottom: 200px;
 }
 .introducao-conteudo {
   padding-top: 200px;
@@ -334,3 +336,63 @@ img {
     gap: 50px;
   }
 }
+
+/* .section-skill{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 20px;
+}
+
+.section-skill > div{
+    flex: 1 1 200px;
+  
+} */
+.section-h2{
+  margin-bottom: 4rem;
+}
+.section-skill{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  gap: 20px 20px;
+  
+}
+.section-skill > div{
+  align-items: center;
+  background-color: #202024;
+  border-radius: 4px;
+  width: 250px;
+  cursor:pointer;
+}
+.section-skill > div:hover{
+  background: #29292E ;
+}
+
+.section-skill p{
+  text-align: center;
+  padding: 20px;  
+}
+
+.section-skill img{
+ border-radius: 4px 4px 0 0;
+}
+
+@media (max-width: 900px) {
+  .section-skill{
+    grid-template-columns: 1fr 1fr;
+  }
+  .introducao {
+    
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {  
+  .section-skill > div{
+    width: 150px;
+  }
+}
+}
+
