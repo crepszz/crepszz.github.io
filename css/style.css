@@ -6,6 +6,7 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   color: #111111;
+  position: relative;
 }
 
 h1,
@@ -96,6 +97,12 @@ img {
   transform: translateX(4px);
 }
 
+.header-bg{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111111;
+}
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -103,8 +110,7 @@ img {
   gap: 20px;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 4rem;
+  padding-bottom: 20px;  
 }
 
 .logo-email {
@@ -161,7 +167,7 @@ img {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #menu {
     display: block;
     position: absolute;
@@ -233,6 +239,7 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 60px;
+  margin-top: 12rem;
   margin-bottom: 200px;
 }
 .introducao-conteudo {
@@ -273,14 +280,6 @@ img {
 .introducao-download a {
   color: var(--cor-5);
 }
-/* .introducao-socialmedias{
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  
-    
-} */
-
 .introducao-botaoSocial {
   display: flex;
   flex-wrap: wrap;
@@ -336,63 +335,46 @@ img {
     gap: 50px;
   }
 }
-
-/* .section-skill{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  gap: 20px;
-}
-
-.section-skill > div{
-    flex: 1 1 200px;
-  
-} */
-.section-h2{
+.section-h2 {
   margin-bottom: 4rem;
 }
-.section-skill{
+.section-skill {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1200px;
   gap: 20px 20px;
-  
 }
-.section-skill > div{
+.section-skill > div {
   align-items: center;
   background-color: #202024;
   border-radius: 4px;
   width: 250px;
-  cursor:pointer;
+  cursor: pointer;
 }
-.section-skill > div:hover{
-  background: #29292E ;
+.section-skill > div:hover {
+  background: #29292e;
 }
 
-.section-skill p{
+.section-skill p {
   text-align: center;
-  padding: 20px;  
+  padding: 20px;
 }
 
-.section-skill img{
- border-radius: 4px 4px 0 0;
+.section-skill img {
+  border-radius: 4px 4px 0 0;
 }
 
 @media (max-width: 900px) {
-  .section-skill{
+  .section-skill {
     grid-template-columns: 1fr 1fr;
   }
   .introducao {
-    
     margin-bottom: 20px;
-}
+  }
 
-
-@media (max-width: 600px) {  
-  .section-skill > div{
-    width: 150px;
+  @media (max-width: 600px) {
+    .section-skill > div {
+      width: 200px;
+    }
   }
 }
-}
-
