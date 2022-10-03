@@ -101,10 +101,9 @@ img {
 .header-bg {
   position: fixed;
   top: 0;
-  width: 100vw;  
+  width: 100%;
   background-color: #111111;
   z-index: 9999;
-  
 }
 .header {
   display: flex;
@@ -113,9 +112,8 @@ img {
   gap: 20px;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;  
+  padding-bottom: 20px;
 }
-
 
 .logo-email {
   display: flex;
@@ -126,7 +124,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  
 }
 
 .header-menu a {
@@ -244,18 +241,18 @@ img {
   padding-top: 80px;
   padding-bottom: 80px;
   gap: 60px;
-  /* margin-top: 12rem; */
   margin-bottom: 200px;
 }
 .introducao-conteudo {
   padding-top: 200px;
+  word-break: break-word;
 }
 
 .conteudo-imagem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 60%; 
+  object-position: 60%;
 }
 .introducao-conteudo h1,
 .introducao-conteudo h2 {
@@ -339,7 +336,7 @@ img {
   .introducao {
     gap: 50px;
   }
-  .introducao-conteudo{
+  .introducao-conteudo {
     margin-bottom: 5rem;
   }
 }
@@ -385,20 +382,19 @@ img {
 @media (max-width: 600px) {
   .section-portfolio > div {
     width: 200px;
-  } 
+  }
 }
 @media (max-width: 500px) {
-  .section-portfolio  {
-    grid-template-columns: 1fr;    
+  .section-portfolio {
+    grid-template-columns: 1fr;
     justify-items: center;
-    width: 100vw;
   }
-  .section-portfolio > div{
+  .section-portfolio > div {
     width: 300px;
   }
-  .section-portfolio img{
+  .section-portfolio img {
     width: 300px;
-}
+  }
 }
 
 .experiencia {
@@ -513,12 +509,12 @@ img {
   padding: 60px 10px 30px 10px;
   margin: 0 auto;
   display: flex;
-  gap: 100px;  
+  gap: 80px;
   align-items: center;
 }
 
-.footer-contato{
-  display: flex;  
+.footer-contato {
+  display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -530,20 +526,18 @@ img {
   line-height: 1.1;
   font-size: 1.125rem;
   color: #8f8f8f;
-  
-  
+  word-break: break-word;
 }
-
 .footer-contato li a {
   color: #ffffff;
 }
 
-.footer-copy {  
+.footer-copy {
   font-size: 1.125rem;
   color: #8f8f8f;
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 800px) {
   .footer-contato li {
     font-size: 1rem;
   }
