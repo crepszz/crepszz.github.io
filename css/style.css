@@ -20,7 +20,7 @@ body {
   height: 100%;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: -1;
 }
 h1,
 h2,
@@ -280,7 +280,6 @@ img {
 .introducao-conteudo span {
   margin-bottom: 32px;
   display: block;
-  /* word-break: normal; */
 }
 
 .introducao-conteudo,
@@ -355,6 +354,26 @@ img {
     margin-bottom: 5rem;
   }
 }
+@media (max-width: 600px) {
+  .introducao {
+    gap: 50px;
+  }
+  .introducao-conteudo h1 {
+    font: 700 3.5rem/1.125 "Libre Baskerville", sans-serif;
+  }
+  .introducao-conteudo p {
+    font: 600 1.35rem/1.5 "Libre Baskerville", sans-serif;
+  }
+  .introducao-span-2 {
+    font: 700 1rem/1.35 "Libre Baskerville", sans-serif;
+  }
+}
+@media (max-width: 380px) {
+  .introducao-span {
+    max-width: 2ch;
+  }
+}
+
 .section-h2 {
   margin-bottom: 4rem;
 }
@@ -560,6 +579,6 @@ img {
 
 @media (max-width: 600px) {
   .footer-container {
-    gap: 40px;
+    gap: 50px;
   }
 }
