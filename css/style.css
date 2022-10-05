@@ -380,17 +380,19 @@ img {
 .section-portfolio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1200px;
+  /* max-width: 1200px; */
   gap: 20px 20px;
   margin-bottom: 6rem;
 }
+
 .section-portfolio > div {
-  align-items: center;
+  /* align-items: center; */
   background-color: #111111;
   border-radius: 4px;
   width: 250px;
   cursor: pointer;
 }
+
 .section-portfolio > div:hover {
   background: #202024;
   transition: 0.3s;
@@ -489,6 +491,7 @@ img {
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
+  color: white;
 }
 
 .empresa-texto {
@@ -535,16 +538,17 @@ img {
 }
 
 .footer {
-  background: #000000;
+  background: #111111;
 }
 
 .footer-container {
-  max-width: 1200px;
-  padding: 60px 10px 30px 10px;
+  max-width: 1140px;
+  padding: 30px 10px 30px 10px;
   margin: 0 auto;
   display: flex;
   gap: 80px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer-contato {
@@ -556,9 +560,8 @@ img {
 .footer-contato li {
   display: flex;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.1;
-  font-size: 1.125rem;
   color: #8f8f8f;
   word-break: break-word;
 }
@@ -567,12 +570,15 @@ img {
 }
 
 .footer-copy {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #8f8f8f;
 }
 
 @media (max-width: 800px) {
   .footer-contato li {
+    font-size: 1rem;
+  }
+  .footer-copy {
     font-size: 1rem;
   }
 }
